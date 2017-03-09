@@ -55,100 +55,65 @@ RFTools用随机要素建造世界. 但是，你可以用这些随机出现的�
 信息卡是复杂的设备, 被高级的电路板和优秀的内核程序充填. 这些东西能够具体的定义一
 个世界如何工作. 大多数涉及维度的参数都可以在信息卡中发现.
 
-If you ever find yourself running low on dimlets, there is a
-higher chance of finding them within your custom dimensions.
-So, when nearly out of dimlets, create a couple random worlds
-and look around for interesting structures - you may find some
-very valuable dimlets in there.
+如果你发现的信息卡并不多, 在自定义的维度中更有可能找到它们.所以缺乏信息卡的时候，
+随便建几个世界，在其中寻找有趣的建筑物-可能会找到一些非常有价值的信息卡.
 {-------------------------------------------------------------}
-{b}There are currently 14 types of dimlets discovered:
-    Terrain Dimlets: These are used to define what a world looks
-        like. Some examples include a normal world, a flat world,
-        or a skylands world.
-    Digit Dimlets: Digit Dimlets are lines of code that can be used
-        to create different dimensions. This allows you to create
-        new, unique worlds, except with exactly the same dimlets.
-    Biome Dimlets: These control what biomes appear in a dimension.
-        How many biomes are supported depends on the controller.
-    Biome Controller: These determine how many and which type of 
-        biomes are selected. For instance, you could define it
-        so that there is only one biome, or a checkerboard of
-        biomes.
+{b}目前发现了14种信息卡:
+    地形信息卡: 用于定义世界看上去像什么.比如正常世界，超平坦世界，浮空岛世界等.
+    数位信息卡: 数位信息卡是用来创造不同世界的代码行. 允许你创建不一样的唯一的
+    世界即使是构成编码模板的信息卡完全一样.
+    生物群系信息卡: 这些卡控制了维度中将会出现什么生物群系。支持多少生物群系取
+    决于生物群系控制器.
+    生物群系控制器:决定了选择哪些种类和多少生物群系. 比如，你可以定义只有一个
+    生物群系或者一棋盘的生物群系.
 {-------------------------------------------------------------}
-    Material Dimlets: These dimlets are used to define what a feature is
-        made out of. For instance, these can be used to make sure a world
-        is made out of Glowstone or a tendril is made out of Netherrack.
-        When used as a modifier for a another dimlet, the cost of
-        these dimlets will drastically increase, same as the liquid
-        dimlets.
-    Liquid Dimlets: Similar to Material Dimlets, these only differ in
-        the fact that they define a liquid instead of a solid material.
-    Feature Dimlets: These dimlets define what features appear in the
-        world, such as floating ores filled with liquids, increased
-        ore generation, or even tendrils of various substances.
-    Structure Dimlets: These define if certain structures will appear in
-        the world, such as strongholds, villages, or mineshafts.
+    材料信息卡: 这些信息卡是用来定义这个维度是用什么做的. 例如，你可创建一个只
+    有萤石的世界或者一卷又一卷的地狱岩.当使用它来和其他信息卡配合（以建立维度刷
+    资源——译者注）, 所建立的维度消耗将大大提升，和液体信息卡一样.
+    液体信息卡: 和材料信息卡一样，不同在于它们用来定义维度中的液体。
+    特征信息卡:这些信息卡决定了出现在世界中的特性, 例如装满了液体的漂浮矿石群，
+    提高矿物生成, 甚至是一堆物质卷在一起.
+    结构信息卡: 决定了特定的结构是否出现在世界中，比如要塞，村庄或矿井.
 {-------------------------------------------------------------}
-    Mob Dimlets: Using these dimlets you can specify additional mobs that
-        should spawn in your world (in addition to normal mob spawning!).
-    Sky Dimlets: These allow you to define the colours, sizes, or even
-        existence of various objects in the sky, such as planets, moons,
-        suns, sky colour, fog colour, and more.
-    Time Dimlets: With these dimlets you can control the time of the day.
-        It can be set to either a fixed time (morning, evening, midnight,
-        noon) or else you can get slow or faster time.
-    Weather Dimlets: Control the weather in your dimension with these
-        dimlets.
-    Effect Dimlets: These dimlets add various special effects. Negative 
-        effects generally help reduce maintenance power.
+    生物信息卡：使用这些信息卡你可以指定额外生成在世界中的生物(除了正常生成的生物!).
+    天空信息卡: 允许你定义天空的颜色，尺寸甚至天空中的物体, 例如行星，月球，太阳
+    ，雾气颜色，等等.
+    时间信息卡: 你可以用它们控制世界内的时间.既可以设定为一个特定时间(早，晚，午
+    夜，中午)也可以加速或减慢时间.
+    天气信息卡: 控制世界的天气
+    效果信息卡: 添加了各种不同的效果. 消极效果有助于减少维持世界的能量.
 {-------------------------------------------------------------}
-    Special dimlets: These are special dimlets that are usually
-        extremely rare.
-
-{b}There are currently five special dimlets:
-    Peaceful Dimlet: This dimlet prevents hostile mobs from
-        spawning in your dimension (except for mobs that you
-        manually add using mob dimlets). It is an expensive
-        dimlet though, and it will also never be randomly
-        generated in dimensions that you create.
-    Efficiency Dimlet: If you add this rare dimlet to your
-        dimension tab then the dimension will consume 20% less
-        energy per tick. This effect is cumulative. However,
-        it will greatly increase the creation time and
-        creation cost.
+    特殊信息卡: 特殊的信息，通常极为稀少。
+{b}有五种特殊信息卡:
+    和平信息卡:这个信息卡会阻止敌对生物在世界中生成(除非你手动添加了生物信息卡). 
+    这个信息卡非常昂贵，而且不会生成在你创建的维度中.
+    效率信息卡:如果你将这个珍贵的信息卡放入编码模板中，维度每tick所消耗的能量会
+    减少20%. 效果可以叠加，但是会很大地提高创建维度时的消耗与时间.
 {-------------------------------------------------------------}
-    Mediocre Efficiency Dimlet: This dimlet functions as a
-        somewhat inferior version of the Effeciency Dimlet.
-        It is easier to obtain, but does not add quite the
-        effects the normal Effeciency Dimlet does.
-    Shelter Dimlet: A dimlet for dimensions that may be
-        excessively hostile, this dimlet creates a much
-        safer spot for teleporting in.
-    Seed Dimlet: A very specialized dimlet to control the seed
-        of the random world generation for a dimension.
+    低效率信息卡: 这是一个低级的效率信息卡.更容易找到，但是效果没有正常效率卡好.
+    避难所信息卡:一个信息卡所对应的维度可能“百鬼丛生”,这个信息卡提供了一个更安
+    全的传送地点.
+    种子信息卡:一个非常特殊的信息卡，以确定种子来控制世界的生成.
 {-------------------------------------------------------------}
-{b}Dimlet Crafting
+{b}信息卡合成
 {n:create}
 
-Now that you have your dimlet parts you need a way to make
-dimlets. Using the Dimlet Workbench you can deconstruct
-dimlets into their technical components and then reconstruct
-them into new dimlets.
+既然有了信息卡部件，就要找到方法制作信息卡.使用信息卡工作台你可以把信息卡分解成
+构成它的部件并将它们重组成新的信息卡.
 
-The workbench can be crafted as follows:
+信息卡工作台按照如下合成:
 {rb:dimlet_workbench}
 {-------------------------------------------------------------}
-Every dimlet is made out of six parts:
-    - Dimlet Base item
-    - Dimlet Control Circuit
-    - Dimlet Energy Module
-    - Dimlet Memory Module
-    - Dimlet Type Controller
-    - Essence item
-
-You need the right tier of every part to make a dimlet.
-There is one control circuit for every rarity (0 to 6) and there
-are three levels of the energy and memory modules.
+每一个信息卡都分为六个部件:
+    - 信息卡基础部件
+    - 信息卡控制电路
+    - 信息卡能源模块
+    - 信息卡内存单元
+    - 信息卡种类控制器
+    - 吸收器
+    
+每一个部件都需要正确的等级来制作信息卡.
+按照珍稀程度（rarity）控制电路分等级 (0到6) 并且能源模块和内存单元都有3个等级.
 {-------------------------------------------------------------}
 When extracting dimlets into parts there is a 40% chance for
 every part that you get nothing. To avoid this it is recommended
