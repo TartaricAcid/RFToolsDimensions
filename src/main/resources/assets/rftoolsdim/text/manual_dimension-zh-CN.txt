@@ -8,68 +8,52 @@
 {l:enscriber}刻录器 - 编码你的维度
 {l:builder}世界构建器 - 创造你的维度
 {l:teleport}去那儿
-{l:failure}Major Failure!
+{l:failure}重要故障!
 {/}
 
 
 
-{l:shards}Shards of the World
-{l:infuser}Machine Infuser
-{l:probe}Activity Probe
-{l:extractor}Energy Extractor
-{l:editor}Dimension Editor
-{l:monitor}Dimension Monitor
+{l:shards}世界碎片
+{l:infuser}碎片注入器
+{l:probe}活动探测器
+{l:extractor}能量返回器
+{l:editor}维度编辑器
+{l:monitor}维度监视器
 {-------------------------------------------------------------}
-{b}Introduction to Dimension Building
+{b}维度建造介绍
 {n:intro}
-Always wanted to create your own worlds? Explore uncharted areas and
-create magnificent buildings in fabulous worlds? With the Dimension
-Builder you create your own dimensions with all kinds of special
-features. Make void worlds, mining ages, floating islands, ...
+你想建造你自己的世界吗? 在惊人的世界中探索未知的疆域，建造美轮美奂的建筑?使用
+世界构建器，你可以用所有的特性建立一个世界. 创造空的世界，矿山，浮空岛...
 
-There is one catch, though. Dimensions require power to run (RF). Simple
-dimensions like a void world don't require a lot of power (10-200 RF/tick)
-but very complex dimensions can easily go above millions RF/tick. So if
-you want a world made out of diamond blocks you're either going to have
-to be very lucky or else be prepared for a hefty power generation system.
+有一点要注意的是，维度需要能量 (RF)来运行. 简单的维度例如虚空世界并不需要很多
+能量(10-200 RF/tick)，但复杂的维度将很容易消耗上百万RF/tick. 所以如果你想建造
+一个由钻石块构成的维度你不仅要非常幸运，还要建造一个胡夫级别的发电系统.
 
-RFTools generates dimensions with random features. However, you can make 
-things more deterministic by specifying every type of dimlet.
+RFTools用随机要素建造世界. 但是，你可以用这些随机出现的要素，高度定制你的世界.
 {-------------------------------------------------------------}
-{b}Dimension Theory
+{b}维度理论
 {n:theory}
-Before embarking on the adventure of forming your own worlds, it is
-important to understand how the dimensions work.
+在建造世界的冒险开始之前,有必要理解维度是如何工作的.
 
-The first thing that is important to understand is that worlds you
-create are not necessarily unique. If a pattern of code is used to
-create one world, using the same pattern of code will create the
-same world again. In fact, when you enter the first world and make
-changes, the changes will appear in the second as well!
+第一件重要的事是，你所建造的维度都不是独一无二的. 当你用一个编码模板创建世界之后, 
+使用相同的编码模板也会创建相同的世界.事实上，当你进入了第一个世界并做出改变，第二
+个（相同的）世界也会改变!
 
-This allows you to disassemble dimensions, but enter the same exact
-ones later with the changes you've made still there, provided
-you used the exact same code.
+允许你分离（相同的）维度, 但是后来进入完全一样的维度之后你对前一个维度的变更依旧
+会保留, 提醒你使用了同样的编码模板.
 {-------------------------------------------------------------}
-{b}Dimlets - Coding the World
+{b}信息卡 - 编码世界
 {n:unknown}
-Dimensions, when created normally, will be completely random. You have
-no way of knowing whether it will be a floating sky world or a huge
-cave, or whether it's midnight or mid-day. Although you have a chance
-of creating a good world, chances are it won't work out in your favour.
+正常创建的维度应该是完全随机的. 你没有办法知道，会是一个漂浮的天空还是一个大洞，
+还是中午或者午夜. 虽然你有机会建造一个很好的世界，但是计划赶不上变化.
 
-However, you can control your world with objects called Dimlets.
-Scattered throughout the world, in dungeons and other chests, or just
-obtained by killing Endermen, you have a chance of finding dimlet
-parts. These small items were made a long time ago with forgotten
-technology and can be used to construct dimlets. These dimlets are
-similar to code - imagine each dimlet as its own line of code;
-modifying the next dimlet or defining something about the world.
+但是你可以用一种叫信息卡的东西控制你的世界.信息卡散落在世界各地的地牢箱子里,或者
+杀掉末影人也有机会掉落信息卡（你可以修建一个末影人塔来刷信息卡——译者注）. 这些小
+玩意由被遗忘的古老科技制作，可用来构建维度. 这些卡片在编码上相似 - 想象一下每一
+张信息卡都有一行编码;修饰下一张信息卡或者直接定义你的世界.
 {-------------------------------------------------------------}
-Dimlets are complicated devices, filled with advanced circuitry
-and powerful essences. These things can literally define how a
-world works. Most of the work you will be doing with dimensions
-will involve these dimlets.
+信息卡是复杂的设备, 被高级的电路板和优秀的内核程序充填. 这些东西能够具体的定义一
+个世界如何工作. 大多数涉及维度的参数都可以在信息卡中发现.
 
 If you ever find yourself running low on dimlets, there is a
 higher chance of finding them within your custom dimensions.
