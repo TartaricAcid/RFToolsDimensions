@@ -90,7 +90,7 @@ RFTools用随机要素建造世界. 但是，你可以用这些随机出现的�
     效率信息卡:如果你将这个珍贵的信息卡放入编码模板中，维度每tick所消耗的能量会
     减少20%. 效果可以叠加，但是会很大地提高创建维度时的消耗与时间.
 {-------------------------------------------------------------}
-    低效率信息卡: 这是一个低级的效率信息卡.更容易找到，但是效果没有正常效率卡好.
+    平庸信息卡: 这是一个低级的效率信息卡.更容易找到，但是效果没有正常效率卡好.
     避难所信息卡:一个信息卡所对应的维度可能“百鬼丛生”,这个信息卡提供了一个更安
     全的传送地点.
     种子信息卡:一个非常特殊的信息卡，以确定种子来控制世界的生成.
@@ -110,145 +110,96 @@ RFTools用随机要素建造世界. 但是，你可以用这些随机出现的�
     - 信息卡能源模块
     - 信息卡内存单元
     - 信息卡种类控制器
-    - 吸收器
+    - 核心物品
     
 每一个部件都需要正确的等级来制作信息卡.
 按照珍稀程度（rarity）控制电路分等级 (0到6) 并且能源模块和内存单元都有3个等级.
 {-------------------------------------------------------------}
-When extracting dimlets into parts there is a 40% chance for
-every part that you get nothing. To avoid this it is recommended
-that you infuse the workbench. A maximum infused workbench will
-guarantee that you get all parts back.
+当把信息卡分解成部件的时候，每个部件都有可能有40%的几率得不到. 为了避免这个
+你需要为工作台注能（见下文）. 一个最大注入的工作台可以确保得到所有组件.
 
-Extracting a dimlet will never give you an essence item. You
-always have to make that.
+分解信息卡不会有核心物品. 你必须自己做。
 {-------------------------------------------------------------}
-There are various kinds of essence items depending on the type
-of dimlet that you want to make:
-    - Biome Absorber for biome dimlets
-    - Material Absorber for material dimlets
-    - Liquid Absorber for liquid dimlets
-    - Time Absorber for time dimlets
-    - Syringe for mob dimlets
-    - Peaceful essence (made out of 9 filled syringes of a
-      specific type) for the peaceful dimlet
-    - Efficiency/mediocre efficiency items for the corresponding
-      efficiency dimlets
-    - Structure Essence (from villagers) for structure dimlets
+取决于你想制作的信息卡，有不同种类的核心物品:
+    - 生物群系吸收器制作生物群系信息卡
+    - 材料吸收器制作材料信息卡
+    - 液体吸收器制作液体信息卡
+    - 时间吸收器制作时间信息卡
+    - 注射器制作生物信息卡
+    - 和平要素 (用9个满的注射器合成) 制作和平信息卡
+    - 效率要素/平庸效率要素制作效率信息卡。
+    - 结构要素 (从村民交易)制作结构信息卡。
 {-------------------------------------------------------------}
-So, if you wanted to create a Biome: Forest dimlet, you would
-place the Biome Absorber within a Forest Biome. Slowly, the
-Biome Absorber will fill up with the essence of the Forest Biome.
-You can then place it in the last slot of the Dimlet Workbench
-along with the other pieces of the dimlet to build your Biome:
-Forest dimlet, now ready to be used in any dimensions!
+所以如果你想要建立一个森林生物群系信息卡, 你要把生物群系吸收器放在森林生物群系
+中. 慢慢地，吸收器就会被森林生物群系填满.
+你可以把满的吸收器放在信息卡工作台右侧的最后一个插槽，和其他的部件一起构成生物
+群系：森林信息卡，可以用在任何维度中！
 
-For the Time Absorber you need to give the absorber a redstone
-signal at approximately the right time. This has to be done
-10 times before it has fully absorbed the time.
+对于时间吸收器，你必须在适当的时间给予一个红石信号.需要重复10次红石信号才能吸收
+满时间.
 {-------------------------------------------------------------}
-Note that some dimlets can be crafted using the regular crafting
-table.
+注意一些信息卡是可以直接在工作台合成的.
 
-You may notice that some of these craftable dimlets require a
-weird item. This is a Dimlet Template which can be crafted as
-follows:
+你可能注意到一些可合成的信息卡需要一个奇怪的东西. 这就是如下合成的信息卡模板:
 {ri:dimlet_template}
 
-To craft this you actually need dimensional shards.
+合成这个需要空间碎片.
 {-------------------------------------------------------------}
-{b}Dimension Enscriber
+{b}信息卡刻录器
 {n:enscriber}
-The Dimension Enscriber is what is used to actually code your dimensions.
+信息卡刻录器是事实上编码你的维度的机器.
 {rb:dimension_enscriber}
-In addition, you will also need a Empty Dimension Tab
+在此之前你需要做一个空白世界构建模板。
 {ri:empty_dimension_tab}
 {-------------------------------------------------------------}
-To use the Dimension Enscriber, you must first insert the Empty
-Dimension Tab into the slot on the lower left. To make a completely
-random world (with no dimlets included), you can simply click
-"Store" and the dimlets included will be randomly selected.
+要使用信息卡刻录器，你必须把空白世界构建模板插入左下方的插槽中.想建立一个完
+全随机没有信息卡的世界, 你只需要点击"Store" 维度就会随机生成.
 
-However, if you would like to actually control your dimension, you
-need to insert dimlets. These can be inserted into the slots on
-the top of the device. Hitting store will create a realised tab
-that leads to the world you've just created.
+但是如果你想控制维度就必须插入信息卡.信息卡要插入刻录器上方的插槽里. 点击store
+刻录模板将出现一个清单指向你的维度.
 {-------------------------------------------------------------}
-The order of the dimlets inserted affects the dimension. If a material
-dimlet is placed before a terrain dimlet, it will create a world made
-out of that material. If it is inserted before a feature dimlet, it will
-make the feature out of that material.
+信息卡摆放的顺序影响了维度. 如果材料信息卡放在地形信息卡之前，将出现一个由这种
+材料构成的维度. 如果放在特征信息卡前面，该特征将不适用于此材料.
 
-The descriptions of each type of dimlet and what they do can be found in the
-{l:unknown}Dimlet Page.
+每种信息卡的描述以及获取来源都在{l:unknown}维度分页.
 {-------------------------------------------------------------}
-When you create a dimension, the dimlets placed into that dimension form
-the signature of the dimension. Any tabs created with those exact dimlets
-will lead to that world. Dimension Tabs can be extracted in the Enscriber
-to return the dimlets used. If access to that dimension is needed again,
-the same dimlets can be re-formed into a dimension to lead to that exact
-dimension, with any changes you've made still there.
+创建一个维度时插入其中的信息卡会形成这个维度的标签. 任何用这些相同的信息卡刻录的
+模板都会指向这个世界. 刻录模板也可以在信息卡刻录器里分解以回收信息卡. 如果模板被
+分解的维度想要重新进入，只需要把相同的信息卡重新构成相同的维度，并保留你的痕迹.
 
-Further information about the theory behind dimensions can be found on the
-{l:theory}Dimension Theory page.
+更多关于维度背后理论的信息在{l:theory}维度理论分页.
 {-------------------------------------------------------------}
-However, some people may wish to create new dimensions with the same
-set of dimlets. This can be easily done using Digit Dimlets. These
-have no power cost and allow you to infinitely vary your dimensions,
-just based on the digit dimlets included. Digit dimlets can be easily
-crafted and cycled between, so it is easy to vary your worlds.
+但是总有些人想用相同的卡片来创建新的维度. 使用数位信息卡很容易做到. 数位卡不消耗
+能量并允许你无限地改变这个世界,只取决于包含的数位信息卡. 数位信息卡很容易合成和循
+环利用, 因此改变世界其实很简单.
 {-------------------------------------------------------------}
-Each dimlet has a certain Maintenance, Creation, and Tick cost shown
-in the tooltip. These represent the power cost of a dimension created
-with those dimlets. The Creation cost represents how much power the 
-dimlet will need per tick when creating the dimension. The Tick 
-cost represents how many ticks that dimlet will add to the creation 
-of the dimlet. The Maintenance cost is simply how much the dimlet 
-will cost per tick after the world is created.
+每一个信息卡都有一定的维持消耗，创建消耗和时间消耗. 这些参数决定了创建一个维度所
+需的信息卡需要多少能量. 创建消耗代表了创建这个世界时所消耗的能量. 时间消耗代表了
+该信息卡需要多久加入世界创建中. 维持消耗代表了世界创建之后维持它的消耗.
 
-The maintenance cost can be lowered using Efficiency Dimlets, making
-it easier to maintain an already created world.
+维持消耗可以用效率信息卡降低，以更好地维持这个世界.
 {-------------------------------------------------------------}
-{b}Dimension Builder
+{b}世界构建器
 {n:builder}
-The Dimension Builder is what is used to create dimensions and maintain
-them based on the Realised Tab
+世界构建器用来根据刻录世界构建模板创造世界并维持它们。
 {rb:dimension_builder}
 
-Depending on the complexity of the dimension it will use power and need
-some time to actually construct the dimension. If there is not enough
-power present the building will be delayed. You can also take out your
-dimension tab if you want to temporarily stop building the dimension (if
-you need power for something else for example). The dimension tab will
-remember the current progress.
+取决于维度的复杂性，需要能量和时间建造一个维度. 如果没有足够的能量，构建将会中止.
+如果你想临时用能量干些别的而中止构建，也可以直接把模板拿出来.刻录模板会保存进度.
 {-------------------------------------------------------------}
-As soon as the dimension is ready the tooltip on the dimension tab
-will change indicating the status and current power. You will also
-notice that the energy level of the dimension builder is suddenly
-emptied. That's because all current energy in the dimension builder
-is immediately given to the dimension. The dimension itself has a
-buffer of 40,000,000 RF. Don't attempt to go to your dimension if
-there is not yet enough energy in it. Wait until sufficient energy
-has been put in it (you can see the current level in the tooltip
-of the dimension tab).
+当维度建成之后刻录模板上的提示会转而显示能量和当前状态. 你也会注意到世界构建器的
+能量等级突然发生变化. 这是因为世界构建器当前的能量被立刻提供给维度. 维度自身有
+4000万RF的缓存. 不要急于进入这个世界因为内部的能量还是不够. 等到足够的能量进入
+(你可以在刻录模板的提示中看见当前所含能量).
 
-Hint: If you shift-right click with the dimension tab in your hand
-you can see what random features were selected for creating this
-dimension.
+提示：如果你手持编码模板潜行右击，你可以看到为了创建这个维度哪些随机特征被选择.
 {-------------------------------------------------------------}
-Note on powering very expensive dimensions: the dimension builder
-accepts a maximum of 50,000 RF/tick on every side. So at most it can
-get 300,000 RF/tick if you input energy from all six sides and if
-you have conduits or energy cells that can handle that amount of
-RF/tick (a tesseract would work). Sometimes even 300,000 RF/tick
-is not enough to power your dimension. In that case you can use
-multiple dimension builders and multiple (identical) dimension tabs.
-That does mean that you will need multiples of all the dimlets that
-you used to create that dimension tab as well.
+当建立非常昂贵的维度时注意:世界构建器每个面最大能接受50000RF/tick的能量，所以从
+6个面输入，最大是30万RF/tick，如果你有这么大流量的管道和能量单元的话（超立方体
+也行）. 有时即使是30万RF/tick都不够充能你的维度. 这种情况下你可以使用多个世界构
+建器和多个（完全一样的）刻录模板.这意味着你需要加倍你的信息卡数量.
 
-Hint: the Special Efficiency dimlet and the Mediocre Effeciency
-dimlet both help with reducing maintenance cost but will add a
-greater creation cost and tick cost.
+提示：效率信息卡和平庸效率信息卡都对减少维持消耗有帮助，但是会加大创建消耗和时间消耗.
 {-------------------------------------------------------------}
 {b}Getting There and Safety
 {n:teleport}
