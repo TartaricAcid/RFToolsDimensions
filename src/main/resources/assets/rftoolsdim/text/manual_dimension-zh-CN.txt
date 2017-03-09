@@ -306,22 +306,16 @@ rftools有如下合成的机器注能机:
 {rb:dimension_editor}
 
 注意插入过程中信息卡将会丢失 (即使你分解了刻录模板这些卡也找不回来了) 而且你要负担这
-些信息卡的全部能量. There is no way to undo this so be careful. This can
-only be done with dimlets of type 'special', 'mob', 'effect',
-'sky', 'weather', and 'time'.
+些信息卡的全部能量. 该操作不可逆所以小心. 这东西只能处理 '特殊', '生物', '效果',
+'天空', '天气', and '时间'.
 {-------------------------------------------------------------}
-In addition to injecting some types of dimlets you can also inject
-a pre-charged matter receiver. This can be handy in case you
-accidently broke your receiver or it failed to generate because
-some structure overwrote it (AE2 meteors tend to do that for
-example).
+除了注入一些信息卡你也可以注入一个预先充能的物质接收器.可以拿在手里以防你破坏了自己
+的接收器或者传送失败因为某些结构的重写 (比如AE2的陨石).
 {-------------------------------------------------------------}
-{b}Dimension Monitor
+{b}维度监视器
 {n:monitor}
 
-Besides the dimension monitor item there is also a dimension monitor
-block which sends out a redstone signal as soon as the power in
-the current dimension goes below a certain level. It can be
-crafted as follows:
+除了手持的维度监视器，还有一个方块式的维度监视器，在当前维度的能量下降到一定值后发出
+红石信号.合成如下:
 {rb:dimension_monitor}
 {-------------------------------------------------------------}
